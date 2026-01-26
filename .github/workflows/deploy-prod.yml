@@ -23,8 +23,8 @@ jobs:
             set -e
             cd ${{ secrets.SSH_PATH }}
             git pull
-            mkdocs build
             npm install
+            mkdocs build
             pm2 delete api-docs || true
             PORT=3569 pm2 start index.js --name api-docs
             pm2 save
