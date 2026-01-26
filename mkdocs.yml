@@ -1,3 +1,4 @@
 site_name: Nivmizz7 API Documentation
 nav:
   - Home: index.md
+  - Levels: levels.md
