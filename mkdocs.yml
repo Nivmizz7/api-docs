@@ -23,21 +23,6 @@ nav:
   - Admin:
     - Editor API: ENDPOINTS_EDITOR.md
 
-markdown_extensions:
-  - pymdownx.highlight:
-      use_pygments: true
-  - pymdownx.superfences
-  - pymdownx.inlinehilite
-  - pymdownx.tabbed:
-      alternate_style: true
-  - tables
-  - toc:
-      permalink: true
-  - admonition
-  - pymdownx.details
-  - pymdownx.arithmatex:
-      generic: true
-
 extra:
   repository_url: https://github.com/nivmizz7/api
   repository_branch: main
