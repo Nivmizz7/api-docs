@@ -1,4 +1,57 @@
-site_name: Nivmizz7 API Documentation
+site_name: Tarkov API Documentation
+site_description: Complete REST API Documentation for Escape from Tarkov
+theme:
+  name: material
+  palette:
+    scheme: dark
+    primary: amber
+    accent: orange
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
 nav:
-  - Home: levels.md
-  - Levels: levels.md
+  - Home: INDEX.md
+  - Documentation Index: DOCUMENTATION_INDEX.md
+  - Getting Started: GUIDE_DEMARRAGE.md
+  - Code Examples: EXEMPLES_CODE.md
+  - Data Structures: STRUCTURES_DONNEES.md
+  - FAQ: FAQ.md
+  - Documentation:
+    - Syntax Reference: SYNTAX_REFERENCE.md
+  - API Reference:
+    - Items: ENDPOINTS_ITEMS.md
+    - Ammunition: ENDPOINTS_AMMUNITION.md
+    - Traders: ENDPOINTS_TRADERS.md
+    - Maps: ENDPOINTS_MAPS.md
+    - Quests: ENDPOINTS_QUESTS.md
+    - Hideout: ENDPOINTS_HIDEOUT.md
+    - Item Presets: ENDPOINTS_PRESETS.md
+    - Levels: ENDPOINTS_LEVELS.md
+    - Storyline: ENDPOINTS_STORYLINE.md
+  - Admin:
+    - Editor API: ENDPOINTS_EDITOR.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      use_pygments: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.arithmatex:
+      generic: true
+
+extra:
+  repository_url: https://github.com/nivmizz7/api
+  repository_branch: main
